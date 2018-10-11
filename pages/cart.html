@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="styles.css">
   </head>
-  
+
   <body>
     <header>
       <h1>Vöruhúsið</h1>
@@ -38,15 +38,13 @@
           <p>99.900 kr.-</p>
         </div>
 
-        <div class="card__form">
+        <div class="cart__form">
           <form method="GET">
-            <div class="card__fieldset">
-                <fieldset>
-                    <div class="number">
-                        <label for="number">Fjöldi:</label>
-                        <input type="number" name="number" id="number"> 
-                    </div>
-                </fieldset>
+            <div class="cart__fieldset">
+              <div class="number">
+                  <label for="number">Fjöldi:</label>
+                  <input type="number" name="number" id="number" placeholder="1"> 
+              </div>
             </div>
             <div class="card__button">
               <img class="button__img" src="/img/cart.svg" alt="">
@@ -58,19 +56,11 @@
             </div>
           </form>
         </div>
-        <div class="cart__info">
-          <div class="info__shipping">
-  
-          </div>
-          <div class="info__payment">
-  
-          </div>
-        </div>
       </div>
 
       <div class="cart__item">
         <div class="item__image">
-          <img class="cart__img" src="../img/watch.jpg" alt="">
+          <img class="cart__img" src="../img/headphones.jpg" alt="">
         </div>
         <div class="item__title">
           <h2>Hágæða heyrnatól</h2>
@@ -81,35 +71,108 @@
         <div class="item__price">
           <p>39.999 kr.-</p>
         </div>
+      </div>
 
-        <div class="card__form">
-          <form method="GET">
-            <div class="card__fieldset">
-                <fieldset>
-                    <div class="number">
-                        <label for="number">Fjöldi:</label>
-                        <input type="number" name="number" id="number"> 
-                    </div>
-                </fieldset>
+      <div class="cart__form">
+        <form method="GET">
+          <div class="cart__fieldset">
+            <div class="number">
+              <label for="number">Fjöldi:</label>
+              <input type="number" name="number" id="number" placeholder="2"> 
             </div>
-            <div class="card__button">
-              <img class="button__img" src="/img/cart.svg" alt="">
-              <input type="submit" value="Uppfæra">
-            </div>
-            <div class="card__button">
-              <img class="button__img" src="/img/cart.svg" alt="">
-              <input type="submit" value="Eyða úr körfu">
-            </div>
-          </form>
-        </div>
-        <div class="cart__info">
-          <div class="info__shipping">
-  
           </div>
-          <div class="info__payment">
-  
+          <div class="cart__button">
+            <img class="button__img" src="/img/cart.svg" alt="">
+            <input type="submit" value="Uppfæra">
           </div>
+          <div class="cart__button">
+            <img class="button__img" src="/img/cart.svg" alt="">
+            <input type="submit" value="Eyða úr körfu">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="cart__info">
+      <div class="info__shipping">
+        <div class="shipping__title">
+          <h2>Sendingarupplýsingar</h2>
         </div>
+        <form method="GET">
+          <div class="name">
+              <label for="text">Nafn:</label>
+              <input type="text" name="text" id="text" required>
+          </div>
+          <div class="address">
+              <label for="address">Heimilisfang:</label>
+              <input type="text" name="address" id="address" required>
+          </div>
+          <div class="val">
+            <label>
+              Póstnúmer: 
+              <select>
+                <option value="">-Velja póstnúmer-</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="info__payment">
+        <div class="payment__title">
+          <h2>Greiðsluupplýsingar</h2>
+        </div>
+        <form method="GET">
+          <div class="name">
+            <label for="creditcard">Kortanúmer:</label>
+            <input type="number" name="number" id="number" required>
+          </div>
+          <div class="address">
+            <label for="name">Korthafi:</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div class="info__month">
+            <label>
+              Mán: 
+              <select>
+                <option value="">01</option>
+                <option value="">02</option>
+                <option value="">03</option>
+                <option value="">04</option>
+                <option value="">05</option>
+                <option value="">06</option>
+                <option value="">07</option>
+                <option value="">08</option>
+                <option value="">09</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+              </select>
+            </label>
+          </div>
+          <div class="info__month">
+            <label>
+              Ár: 
+              <select>
+                <option value="">2018</option>
+                <option value="">2017</option>
+                <option value="">2016</option>
+                <option value="">2015</option>
+                <option value="">2014</option>
+                <option value="">2013</option>
+              </select>
+            </label>
+          </div>
+        </form>
+        <form method="GET">
+          <div class="cart_btn">
+            <input type="submit" value="Kaupa">
+          </div>
+        </form>
+
       </div>
     </div>
 
