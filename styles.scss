@@ -37,7 +37,7 @@ $colors: (
 
 @function color($color-name) {
   @return map-get($colors, $color-name)
-};
+}
 
 $fonts: (
   mainfont: ('Open Sans', Helvetica, Arial, sans-serif),
@@ -46,7 +46,7 @@ $fonts: (
 
 @function font($font-name) {
   @return map-get($fonts, $font-name)
-};
+}
 
 
 header {
@@ -65,6 +65,10 @@ header {
     display: flex;
     flex-direction: row;
     font-family: font(mainfont);
+    
+    .active {
+      text-decoration: underline;
+    }
 
     .navbar__main {
       margin: 0 auto;
