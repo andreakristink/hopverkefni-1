@@ -1,8 +1,8 @@
 {
   "name": "package.json",
   "version": "1.0.0",
-  "description": "Hópverkefni 1 í áfanganum Vefforritun 1",
-  "main": "index.js",
+  "description": "Hópverkefni 1 í áfanganum Vefforritun 1 árið 2018",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/fah13/hopverkefni-1.git"
   },
-  "author": ,
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fah13/hopverkefni-1/issues"
   },
   "homepage": "https://github.com/fah13/hopverkefni-1#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.4",
+    "stylelint": "^9.6.0",
+    "stylelint-config-primer": "^2.2.10"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.3"
+  }
 }
