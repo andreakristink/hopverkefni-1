@@ -1,29 +1,8 @@
-//@import "scss/config";
+@import "scss/config.scss";
 
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-$colors: (
-  litur1: #000,
-  litur2: #fff,
-  litur3: #afb281,
-  litur4: #cee8ff,
-  litur5: #fcffd2,
-  litur6: #cc9694,
-);
-
-$fonts: (
-  mainfont: ('Open Sans', Helvetica, Arial, sans-serif),
-  headingfont: ('Oswald', Verdana, serif),
-);
-
-@function color($color-name) {
-  @return map-get($colors, $color-name)
-};
-
-@function font($font-name) {
-  @return map-get($map: $fonts, $key: $font-name)
-};
 
 
 * {
@@ -43,14 +22,14 @@ html { /* stylelint-disable-line */
 
   // TODO fleiri grunn stillingar
   font-size: 16px;
-  font-family: font(mainfont);
+  font-family: font(main_font);
 }
 
 header {
-  background-color: color(litur3);
+  background-color: color(litur_graenn);
 
   h1 {
-    font-family: font(headingfont);
+    font-family: font(heading_font);
     font-weight: bold;
     text-align: center;
     font-size: 3em;
@@ -132,48 +111,7 @@ header {
 }
 
 
-footer {
-  background-color: color(litur6);
-  display: flex;
-  flex-direction: column;
-
-  p {
-    text-align: center;
-    margin: 1em;
-    padding-bottom: 1em;
-    font-size: 0.875em;
-  }
-
-  .lists {
-    display: flex;
-    justify-content: space-around;
-
-    ul {
-      list-style: none;
-      padding: 1em;
-
-      h3 {
-        margin-bottom: 1em;
-        font-weight: bold;
-      }
-
-      li {
-        line-height: 1.5;
-
-        a {
-          text-decoration: none;
-          color: color(litur5);
-          transition: color 300ms ease-in-out;
-        }
-
-        a:hover {
-          color: color(litur1);
-        }
-      }
-    }
-  }
-}
 
 
 // TODO sækja allar sass skrár
-//@import "scss/...";
+@import "scss/footer.scss";
