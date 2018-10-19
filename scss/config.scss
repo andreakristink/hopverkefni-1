@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
 $colors: (
   litur_svartur: #000,
   litur_hvitur: #fff,
@@ -11,3 +15,11 @@ $fonts: (
   main_font: ('Open Sans', Helvetica, Arial, sans-serif),
   heading_font: ('Oswald', Verdana, serif),
 );
+
+@function color($color-name) {
+  @return map-get($colors, $color-name)
+};
+
+@function font($font-name) {
+  @return map-get($fonts, $font-name)
+};
