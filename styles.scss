@@ -1,10 +1,5 @@
 @import "scss/config.scss";
 
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
-
-
 * {
   padding: 0;
   margin: 0;
@@ -25,93 +20,8 @@ html { /* stylelint-disable-line */
   font-family: font(main_font);
 }
 
-header {
-  background-color: color(litur_graenn);
-
-  h1 {
-    font-family: font(heading_font);
-    font-weight: bold;
-    text-align: center;
-    font-size: 3em;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: column;
-
-    .active {
-      text-decoration: underline;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    a {
-      color: color(litur1);
-      text-decoration: none;
-      font-size: 0.875em;
-      transition: color 300ms ease-in-out;
-    }
-
-    a:hover {
-      color: color(litur2);
-    }
-
-    .navbar__main {
-      margin: 0 auto;
-
-      ul {
-        display: flex;
-
-        li {
-          padding: 0.875em;
-
-          a {
-            text-transform: uppercase;
-            font-weight: bold;
-          }
-        }
-      }
-    }
-
-    .navbar__cart {
-      display: flex;
-      flex-direction: row;
-      
-      .cart__icon {
-        width: 1em;
-        height: 1em;
-      }
-
-      a {
-        margin: 1em;
-      }
-    }
-  }
-}
-
-.grid {
-  .grid__row {
-    display: flex;
-    flex-direction: column;
-    margin-right: -0.625em;
-    margin-left: -0.625em;
-
-    .grid__col {
-      width: 100%;
-      padding-right: 0.625em;
-      padding-left: 0.625em;
-
-      .grid__image {
-        width: 100%;
-      }
-    }
-  }
-}
-
-
-
 
 // TODO sækja allar sass skrár
 @import "scss/footer.scss";
+@import "scss/header.scss";
+@import "scss/grid.scss";
