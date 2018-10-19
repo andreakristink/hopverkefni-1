@@ -1,0 +1,67 @@
+@import "config.scss";
+
+header {
+    background-color: color(litur_graenn);
+  
+    h1 {
+      font-family: font(heading_font);
+      font-weight: bold;
+      text-align: center;
+      font-size: 3em;
+    }
+  
+    .navbar {
+      display: flex;
+      flex-direction: column;
+  
+      .active {
+        text-decoration: underline;
+      }
+  
+      ul {
+        list-style: none;
+      }
+  
+      a {
+        color: color(litur_svartur);
+        text-decoration: none;
+        font-size: 0.875em;
+        transition: color 300ms ease-in-out;
+      }
+  
+      a:hover {
+        color: color(litur_hvitur);
+      }
+  
+      .navbar__main {
+        margin: 0 auto;
+  
+        ul {
+          display: flex;
+  
+          li {
+            padding: 0.875em;
+  
+            a {
+              text-transform: uppercase;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+  
+      .navbar__cart {
+        display: flex;
+        flex-direction: row;
+        
+        .cart__icon {
+          width: 1em;
+          height: 1em;
+        }
+  
+        a {
+          margin: 1em;
+        }
+      }
+    }
+  }
