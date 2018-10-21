@@ -1,20 +1,97 @@
 @import "config.scss";
 
+$bp_tablet: 768px;
+$bp_large: 1200px;
+
 .grid {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+  margin-left: -0.625em;  // -10px
+  margin-right:-0.625em;  // -10px
+}
+
+.grid__col {
+  width: 100%;
+  padding-right: 0.625em;  // 10px
+  padding-left: 0.625em;   // 10px
+}
+
+.grid__text {
+  h2 {
+    font-family: font(heading_font);
+    font-size: 3em;
+    text-align: left;
+
+    margin: 1em 0;
+  }
+
+  p {
+    font-size: 1.5em;
+    margin: 1em 0;
+  }
+
+  button {
+    background-color: color(litur_bleikur);
+    font-size: 1.3125em;
+    border-radius: 7px;
+    transition: 
+      background-color 300ms ease-in-out,
+      color 300ms ease-in-out;
+    margin: 1em 0em;
+    padding: 1em 1em;
+    width: 75%;
+  }
+
+  button:hover {
+    background-color: color(litur_svartur);
+    color: color(litur_bleikur);
+  }
+}
+
+.grid__image {
+  max-width: 100%;
+  margin: 1em 0;
+}
+
+.grid__row:nth-child(2n) .grid__col:first-child {
+  order: 2;
+}
+
+@media screen and (min-width: $bp_tablet) {
   .grid__row {
-    display: flex;
-    flex-direction: column;
-    margin-right: -0.625em;
-    margin-left: -0.625em;
+    flex-direction: row;
+  }
 
-    .grid__col {
-      width: 100%;
-      padding-right: 0.625em;
-      padding-left: 0.625em;
+  .grid__col {
+    margin: 2em 0 1em 0;
+    width: 50%;
+  }
 
-      .grid__image {
-        width: 100%;
-      }
+  .grid__row:nth-child(2n) .grid__col:first-child {
+    order: 0;
+  }
+
+  .grid__text {
+    h2 {
+      font-size: 2.25em;
+      margin: 0 0 1em 0;
+    }
+
+    button {
+      font-size: 1em;
+      margin: 0em;
+      width: 65%;
+    }
+
+    .grid__image {
+      margin: 0;
     }
   }
 }
