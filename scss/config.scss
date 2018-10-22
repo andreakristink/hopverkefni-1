@@ -16,6 +16,8 @@ $fonts: (
   heading_font: ('Oswald', Verdana, serif),
 );
 
+$bp_tablet: 768px;
+
 @function color($color-name) {
   @return map-get($colors, $color-name)
 };
