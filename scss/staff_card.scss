@@ -3,15 +3,13 @@
 
 //útlit á kortum og hover
 
-div{
+.staff__container{
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 300px;
     max-height: 400px;
 }
-
-
 
 .staff__card{
     position: absolute;
