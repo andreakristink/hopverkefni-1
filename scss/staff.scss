@@ -2,28 +2,20 @@
 
 //uppröðun á kortum
 
-.staff__cards{
-    background-color: color(litur_bleikur);
+.staff__cards {
+    overflow: hidden;
+    background-color: color(litur_hvitur);
 }
 
-.staff__card{
-
+.staff__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
 }
-
-//front
-.staff__image{
-
-}
-
-//back
-.staff__text{
-
-}
-
-.staff__image{
-    
-}
-
-.staff__img{
-    
+  
+.staff__col {
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 1200px;
 }
