@@ -2,16 +2,17 @@
 
 //uppröðun á kortum
 
-.staff__cards {
-    overflow: hidden;
-    background-color: color(litur_hvitur);
-}
 
 .staff__row {
     display: flex;
     flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
+}
+
+.staff__cards {
+    overflow: hidden;
+    background-color: color(litur_hvitur);
 }
   
 .staff__col {

@@ -1,6 +1,5 @@
 @import "config.scss";
 
-$bp_tablet: 768px;
 
 header {
     background-color: color(litur_graenn);
@@ -72,9 +71,9 @@ header {
 
   @media screen and (min-width: $bp_tablet) {
     .navbar__cart {
-      position: absolute;
+      //position: absolute;
       //padding: 20px;
-      padding-left: 84vw;
+      //padding-left: 84vw;
 
     }
   }
