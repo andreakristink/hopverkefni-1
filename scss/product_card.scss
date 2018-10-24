@@ -3,18 +3,15 @@
 .card {
     max-width: 380px;
     max-height: 600px;
+    background-color: blue;
     overflow: hidden;
-    background-color: #fff;
     display: flex;
     flex-direction: column;
-    background-color: blue;
 }
 
 .card__image {
-    flex: 0 1 auto;
     overflow: hidden;
-    flex-grow: 2;
-    margin-bottom: 400px;
+    margin-bottom: 200px;
 }
 
 .card__img {
@@ -40,7 +37,6 @@
 }
 
 .card__form {
-    display: none;
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -48,26 +44,20 @@
 }
   
 
-  
-.card__img {
-    display: none;
-    max-width: 100%;
-}
-
+/*
 .card__fieldset {
-    display: none;
 
 }
+*/
 
 .card__button {
-    display: none;
     padding-left: 20px;
     flex: 0 0 150px;
     overflow: hidden;
 }
 
 .button__img {
-    display: none;
+
     max-width: 100%;
 }
   

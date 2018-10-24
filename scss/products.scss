@@ -1,20 +1,24 @@
 @import "config.scss";
 
 .cards {
+    max-width: 1240px;
+    padding-left: 10px;
+    padding-right: 10px;
     overflow: hidden;
 }
 
+/*
 .cards__row {
     display: flex;
     flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
 }
-  
+
 .cards__col {
     padding-left: 10%;
     padding-right: 10%;
-    max-width: 1200px;
+    max-width: 1240px;
 }
 
-
+*/
