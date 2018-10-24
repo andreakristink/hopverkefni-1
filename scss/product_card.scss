@@ -3,7 +3,7 @@
 .card {
     max-width: 380px;
     max-height: 600px;
-    background-color: blue;
+    background-color:lightblue;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,6 @@
 
 .card__image {
     overflow: hidden;
-    margin-bottom: 200px;
 }
 
 .card__img {
@@ -40,7 +39,7 @@
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    flex-direction: row;
 }
   
 
