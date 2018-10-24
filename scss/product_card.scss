@@ -1,7 +1,6 @@
 @import "config.scss";
 
 .card {
-    width: 100%;
     max-width: 380px;
     max-height: 600px;
     overflow: hidden;
@@ -24,23 +23,20 @@
 
 
 .card__title {
-    margin-bottom: 20px;
-    font-size: 1.375em;
-    line-height: 1;
-    word-break: break-word;
+    font: fonts(heading_font);
+    font-size: 1.5rem;
+    font-style: bold;
 }
 
+
 .card__text {
-    display: none;
-    font-size: 1em;
-    line-height: 1.375;
-    overflow: auto;
-    word-break: break-word;
+    font: fonts(main_font);
+    font-size: 0.75rem;
 }
 
 .card__price {
-    display: none;
-
+    font-size: 1rem;
+    font-style: bold;
 }
 
 .card__form {
