@@ -35,11 +35,11 @@
     backface-visibility: hidden; 
 }
 
-.staff__face.front {
+.staff__face .front {
     position: absolute;
 }
 
-.staff__face .back{
+.staff__face.back{
     display: block;
     position: absolute;
     transform: rotateY(180deg); //sjáum ekki bakhliðina strax
