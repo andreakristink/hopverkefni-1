@@ -30,12 +30,12 @@
 
     <div class="cart__main">
       <div class="cart">
-        <h2>Vörur í körfu</h2>
+        <h2 class="cart__title">Vörur í körfu</h2>
         <div class="cart__item">
           <div class="item__image">
-            <img class="cart__img" src="../img/watch.jpg" alt="">
+            <img class="item__img" src="../img/watch.jpg" alt="">
           </div>
-          <div class="cart__content">
+          <div class="item__content">
             <div class="item__title">
               <h2>Ótrúlegt úr</h2>
             </div>
@@ -45,8 +45,7 @@
             <div class="item__price">
               <p>99.900 kr.-</p>
             </div>
-
-            <div class="cart__form">
+            <div class="item__form">
               <form method="GET">
                 <div class="cart__fieldset">
                   <div class="number">
@@ -54,24 +53,27 @@
                       <input type="number" name="number" id="number" placeholder="1"> 
                   </div>
                 </div>
-                <div class="card__button">
-                  <img class="button__img" src="/img/cart.svg" alt="">
-                  <input type="submit" value="Uppfæra">
-                </div>
-                <div class="card__button">
-                  <img class="button__img" src="/img/cart.svg" alt="">
-                  <input type="submit" value="Eyða úr körfu">
-                </div>
               </form>
+              <div class="card__button">
+                <!-- <img class="button__img" src="/img/cart.svg" alt=""> -->
+                <button class="item__button">
+                  <img class="button__img" src="/img/cart.svg" alt="">
+                  Uppfæra
+                </button>
+              </div>
+              <div class="card__button">
+                <!--<img class="button__img" src="/img/cart.svg" alt="">-->
+                <button class="item__button">Eyða úr körfu</button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="cart__item">
           <div class="item__image">
-            <img class="cart__img" src="../img/headphones.jpg" alt="">
+            <img class="item__img" src="../img/headphones.jpg" alt="">
           </div>
-          <div class="cart__content">
+          <div class="item__content">
             <div class="item__title">
               <h2>Hágæða heyrnatól</h2>
             </div>
@@ -81,25 +83,24 @@
             <div class="item__price">
               <p>39.999 kr.-</p>
             </div>
-          </div>
-
-          <div class="cart__form">
-            <form method="GET">
-              <div class="cart__fieldset">
-                <div class="number">
-                  <label for="number">Fjöldi:</label>
-                  <input type="number" name="number" id="number" placeholder="2"> 
+            <div class="item__form">
+              <form method="GET">
+                <div class="cart__fieldset">
+                  <div class="number">
+                    <label for="number">Fjöldi:</label>
+                    <input type="number" name="number" id="number" placeholder="2"> 
+                  </div>
                 </div>
-              </div>
-              <div class="cart__button">
+              </form>
+              <div class="card__button">
                 <img class="button__img" src="/img/cart.svg" alt="">
-                <input type="submit" value="Uppfæra">
+                <button class="item__button">Uppfæra</button>
               </div>
-              <div class="cart__button">
+              <div class="card__button">
                 <img class="button__img" src="/img/cart.svg" alt="">
-                <input type="submit" value="Eyða úr körfu">
+                <button class="item__button">Eyða úr körfu</button>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>

@@ -11,17 +11,60 @@
     padding-right: 20px;
 }
 
+.cart__title {
+    margin-top: 1em;
+}
+
 .cart__item {
+    display: flex;
+    flex-direction: column;
+
+    .item__text {
+        margin-top: 1em;
+    }
+
+    .item__price {
+        font-family: font(heading_font);
+        font-size: 1.25em;
+        font-weight: bold;
+        margin-top: 1em;
+    }
+}
+
+.item__form {
     display: flex;
     flex-direction: row;
 }
 
 .item__image {
-    width: 100%;
+    margin: 1em 0;
+
+    .item__img {
+        width: 100%
+    }
 }
 
 h2 {
     font-family: font(heading_font);
+    font-size: 2em;
+}
+
+.card__button {
+    background-repeat: no-repeat;
+    border: 1px sold;
+    font-size: 1.3125em;
+    padding: 0;
+    
+    
+
+    .item__button {
+        //background: url("../img/cart.svg") no-repeat;
+        //background-size: 20px 20px;
+        
+        padding: 10px 0em;
+        width: 300px;
+        font-size: 1em;
+    }
 }
 
 .button__img {
@@ -29,17 +72,16 @@ h2 {
     height: 1em;
 }
 
+
+
 .cart__info {
     display: flex;
-    flex-direction: row;
-    margin: 0 auto;
+    flex-direction: column;
+    // margin: 0 auto; Þetta er bara fyrir stærri upplausnir
 }
 
 .info__form {
-    margin: 1em;
-    
-    padding-right: 10px;
-    padding-left: 10px;
+    margin-top: 2em;
 }
 
 .form__list {
@@ -49,6 +91,13 @@ h2 {
     .form__date {
         padding-right: 1em;
     }
+}
+
+input {
+    width: 12em;
+    height: 2.5em;
+    border-radius: 2px;
+    
 }
 
 .cart__buy {
@@ -72,3 +121,29 @@ h2 {
       }
 }
 
+
+
+@media screen and (min-width: $bp_tablet) {
+    .cart__item {
+        flex-direction: row;
+    }
+
+    .item__image {
+        width: 33.3333333333333333%;
+        padding-right: 10px;
+    }
+
+    .item__content {
+        width: 60.6666666666666667%;
+        padding-left: 10px;
+    }
+
+    .cart__info {
+        flex-direction: row;    // hlið við hlið
+        margin: 0 auto;         // miðjujafna
+        
+        .info__form {
+            padding-right: 1em;
+        }
+    }
+}
