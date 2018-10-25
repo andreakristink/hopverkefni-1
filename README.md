@@ -3,10 +3,10 @@
 
 ## Keyrsla á verkefni
 
-Upplýsingar um hvernig keyra skuli verkefnið.
+[//]: # (Upplýsingar um hvernig keyra skuli verkefnið.)
 
 ## Uppsetning verkefnis
-Lýsingu á uppsetningu verkefnis, hvernig því er skipt í möppur, hvernig CSS er skipulagt og fleira sem á við
+[//]: # (Lýsingu á uppsetningu verkefnis, hvernig því er skipt í möppur, hvernig CSS er skipulagt og fleira sem á við)
 
 Markmið verkefnisins var að hanna og útfæra vefsíðu frá grunni eftir gefinni fyrirmynd. Gefnin var `index.html` með vísun í `styles.css` og `grid.css` ásamt tómum skrám fyrir `products.html`, `staff.html` og `cart.html` sem finna má í möppunni `pages/`.
 
@@ -48,7 +48,7 @@ Hópmeðlimir og höfundar þessa verkefnis eru:
 * Lea Jerman Plesec (ljp1@hi.is)
 
 
-***
+---
 
 # Hópverkefni 1
 
@@ -165,4 +165,4 @@ Myndir frá:
 
 ---
 
-> Útgáfa 0.1
+> Útgáfa 0.2
