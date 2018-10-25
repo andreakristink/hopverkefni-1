@@ -1,7 +1,51 @@
 @import "config.scss";
 
+
+// útlit á síðunni
+
+
+.cards__container {
+    overflow: hidden;
+    max-width: 1240px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em -10px 2em -10px;
+    justify-content: center;
+}
+
+.card__col {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+  
+
+/*
+.card__fieldset {
+
+}
+*/
+
+// útlit á kortunum sjálfum
+
 .card {
-    max-width: 380px;
+    max-width: 420px;
     max-height: 600px;
     background-color:lightblue;
     overflow: hidden;
@@ -20,14 +64,14 @@
 
 .card__title {
     font: fonts(heading_font);
-    font-size: 1.5rem;
+    font-size: 1.3125rem; 
     font-style: bold;
 }
 
 
 .card__text {
     font: fonts(main_font);
-    font-size: 0.75rem;
+    font-size: 1rem;
 }
 
 .card__price {
@@ -41,13 +85,6 @@
     flex-wrap: wrap;
     flex-direction: row;
 }
-  
-
-/*
-.card__fieldset {
-
-}
-*/
 
 .card__button {
     padding-left: 20px;
@@ -60,3 +97,8 @@
     max-width: 100%;
 }
   
+
+.card__number {
+    display: flex;
+    flex-direction: column;
+}
