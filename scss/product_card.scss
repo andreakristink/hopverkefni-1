@@ -96,7 +96,8 @@
     justify-content: space-between;
 }
 
-.card__form {
+.card__input {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -133,16 +134,29 @@
     margin-top: 1em;
 }
 
+
+
+
 .card__input {
     margin-top: 10px;
     display: inline-flex;
     align-items: row;
+    justify-content: flex-end;
 }
 
-.product__button {
+.card__fieldset {
+    flex: 2;
+}
+
+
+.item__button {
     padding-left: 20px;
     overflow: hidden;
 }
+
+
+
+
 
 .button__img {
     max-width: 100%;
@@ -154,10 +168,6 @@
     align-items: column;
 }
 
-.card__form {
-    display: flex;
-    align-items: row;
-}
 
 
 
