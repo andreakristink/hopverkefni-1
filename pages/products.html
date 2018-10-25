@@ -1,278 +1,287 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Vöruhúsið</title>
 
-        <link rel="stylesheet" href="../grid.css">
-        <link rel="stylesheet" href="../styles.css">
-    </head>
-  
-    <body>
-        <header>
-            <h1>Vörur</h1>
-            <div class="navbar">
-                <nav class="navbar__main">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vöruhúsið</title>
+
+    <link rel="stylesheet" href="../grid.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Vörur</h1>
+        <div class="navbar">
+            <nav class="navbar__main">
                 <ul>
                     <li><a href="../index.html">Forsíða</a></li>
                     <li><a class="active" href="products.html">Vörur</a></li>
                     <li><a href="staff.html">Starfsfólk</a></li>
                 </ul>
-                </nav>
-                <nav class="navbar__cart">
+            </nav>
+            <nav class="navbar__cart">
                 <ul>
                     <li><a href="cart.html">Karfa (3)</a></li>
                 </ul>
-                </nav>
-            </div>  
-        </header>
-        <div class="cards__container">
-            <div class="card__row">
-                <div class="card__col">
-                    <section class="card"> <!-- kort 1 -->
-                        <div class="card__image">
-                            <img class="card__img" src="../img/watch.jpg" alt="">
-                        </div>
-                        <div class="card__title">
-                            <h2>Ótrúlegt úr</h2>
-                        </div>
-                        <div class="card__text">
-                            <p>Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
-                        </div>
-                        <div class="card__price">
-                            <p>99.900 kr.-</p>
-                        </div>
-                        <div for="number"> Fjöldi: </label>
+            </nav>
+        </div>
+    </header>
+    <div class="cards__container">
+        <div class="card__row">
+            <div class="card__col">
+                <section class="card">
+                    <!-- kort 1 -->
+                    <div class="card__image">
+                        <img class="card__img" src="../img/watch.jpg" alt="">
+                    </div>
+                    <div class="card__title">
+                        <h2>Ótrúlegt úr</h2>
+                    </div>
+                    <div class="card__text">
+                        <p>Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
+                    </div>
+                    <div class="card__price">
+                        <p>99.900 kr.-</p>
+                    </div>
+                    <div for="number"> Fjöldi: </label>
                         <div class="card__form">
                             <form method="GET">
                                 <div class="card__fieldset">
                                     <div class="card__number">
-                                        <input type="number" name="number" id="number" placeholder="1"> 
+                                        <input type="number" name="number" id="number" placeholder="1">
                                     </div>
                                 </div>
                                 <div class="card__button">
-                                        <button class="item__button">
-                                            <img class="button__img" src="../img/cart.svg" alt="">
-                                            <p>Setja í körfu</p>
-                                        </button>
+                                    <button class="item__button">
+                                        <img class="button__img" src="../img/cart.svg" alt="">
+                                        <p>Setja í körfu</p>
+                                    </button>
                                 </div>
                             </form>
                         </div>
-                    </section>
-                </div>
-                <div class="card__col">
-                    <section class="card">  <!-- kort 2 -->
-                        <div class="card__image">
-                            <img class="card__img" src="../img/pineapple.jpg" alt="">
-                        </div>
-                        <div class="card__title">
-                            <h2>Ananas drykkur</h2>
-                        </div>
-                        <div class="card__text">
-                            <p>Fólk er alveg „ananas“ yfir þessum drykk.</p>
-                        </div>
-                        <div class="card__price">
-                            <p>4.900 kr.-</p>
-                        </div>
-                        <div for="number"> Fjöldi: </label>
+                </section>
+            </div>
+            <div class="card__col">
+                <section class="card">
+                    <!-- kort 2 -->
+                    <div class="card__image">
+                        <img class="card__img" src="../img/pineapple.jpg" alt="">
+                    </div>
+                    <div class="card__title">
+                        <h2>Ananas drykkur</h2>
+                    </div>
+                    <div class="card__text">
+                        <p>Fólk er alveg „ananas“ yfir þessum drykk.</p>
+                    </div>
+                    <div class="card__price">
+                        <p>4.900 kr.-</p>
+                    </div>
+                    <div for="number"> Fjöldi: </label>
                         <div class="card__form">
                             <form method="GET">
                                 <div class="card__fieldset">
                                     <div class="number">
-                                        <input type="number" name="number" id="number" placeholder="1"> 
+                                        <input type="number" name="number" id="number" placeholder="1">
                                     </div>
                                 </div>
                                 <div class="card__button">
-                                        <button class="item__button">
-                                            <img class="button__img" src="../img/cart.svg" alt="">
-                                            <p>Setja í körfu</p>
-                                        </button>
+                                    <button class="item__button">
+                                        <img class="button__img" src="../img/cart.svg" alt="">
+                                        <p>Setja í körfu</p>
+                                    </button>
                                 </div>
                             </form>
                         </div>
-                    </section>
-                </div>
-                <div class="card__col">
-                    <section class="card">  <!-- kort 3 -->
-                        <div class="card__image">
-                            <img class="card__img" src="../img/gameboy.jpg" alt="">
-                        </div>
-                        <div class="card__title">
-                            <h2>Gameboy</h2>
-                        </div>
-                        <div class="card__text">
-                            <p>Hver man ekki eftir gameboy?</p>
-                        </div>
-                        <div class="card__price">
-                            <p>59.999 kr.-</p>
-                        </div>
-                        <div for="number"> Fjöldi: </label>
+                </section>
+            </div>
+            <div class="card__col">
+                <section class="card">
+                    <!-- kort 3 -->
+                    <div class="card__image">
+                        <img class="card__img" src="../img/gameboy.jpg" alt="">
+                    </div>
+                    <div class="card__title">
+                        <h2>Gameboy</h2>
+                    </div>
+                    <div class="card__text">
+                        <p>Hver man ekki eftir gameboy?</p>
+                    </div>
+                    <div class="card__price">
+                        <p>59.999 kr.-</p>
+                    </div>
+                    <div for="number"> Fjöldi: </label>
                         <div class="card__form">
                             <form method="GET">
                                 <div class="card__fieldset">
                                     <div class="number">
-                                        <input type="number" name="number" id="number" placeholder="1"> 
+                                        <input type="number" name="number" id="number" placeholder="1">
                                     </div>
                                 </div>
                                 <div class="card__button">
-                                        <button class="item__button">
-                                            <img class="button__img" src="../img/cart.svg" alt="">
-                                            <p>Setja í körfu</p>
-                                        </button>
+                                    <button class="item__button">
+                                        <img class="button__img" src="../img/cart.svg" alt="">
+                                        <p>Setja í körfu</p>
+                                    </button>
                                 </div>
                             </form>
                         </div>
-                    </section>
-                </div>
-                <div class="card__col">
-                    <section class="card">  <!-- kort 4 -->
-                        <div class="card__image">
-                            <img class="card__img" src="../img/shoes.jpg" alt="">
-                        </div>
-                        <div class="card__title">
-                            <h2>Hlaupskór</h2>
-                        </div>
-                        <div class="card__text">
-                            <p>Þú munt hlaupa hratt í þessum.</p>
-                        </div>
-                        <div class="card__price">
-                            <p>19.900 kr.-</p>
-                        </div>
-                        <div for="number"> Fjöldi: </label>
+                </section>
+            </div>
+            <div class="card__col">
+                <section class="card">
+                    <!-- kort 4 -->
+                    <div class="card__image">
+                        <img class="card__img" src="../img/shoes.jpg" alt="">
+                    </div>
+                    <div class="card__title">
+                        <h2>Hlaupskór</h2>
+                    </div>
+                    <div class="card__text">
+                        <p>Þú munt hlaupa hratt í þessum.</p>
+                    </div>
+                    <div class="card__price">
+                        <p>19.900 kr.-</p>
+                    </div>
+                    <div for="number"> Fjöldi: </label>
                         <div class="card__form">
                             <form method="GET">
                                 <div class="card__fieldset">
                                     <div class="number">
-                                        <input type="number" name="number" id="number" placeholder="1"> 
+                                        <input type="number" name="number" id="number" placeholder="1">
                                     </div>
                                 </div>
                                 <div class="card__button">
-                                        <button class="item__button">
-                                            <img class="button__img" src="../img/cart.svg" alt="">
-                                            <p>Setja í körfu</p>
-                                        </button>
+                                    <button class="item__button">
+                                        <img class="button__img" src="../img/cart.svg" alt="">
+                                        <p>Setja í körfu</p>
+                                    </button>
                                 </div>
                             </form>
                         </div>
-                    </section>
-                </div>
-                <div class="card__col">
-                    <section class="card"> <!-- kort 5 -->
-                        <div class="card__image">
-                            <img class="card__img" src="../img/headphones.jpg" alt="">
-                        </div>
-                        <div class="card__title">
-                            <h2>Hágæða heyrnatól</h2>
-                        </div>
-                        <div class="card__text">
-                            <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?</p>
-                        </div>
-                        <div class="card__price">
-                            <p>39.999 kr.-</p>
-                        </div>
-                        <div for="number"> Fjöldi: </label>
+                </section>
+            </div>
+            <div class="card__col">
+                <section class="card">
+                    <!-- kort 5 -->
+                    <div class="card__image">
+                        <img class="card__img" src="../img/headphones.jpg" alt="">
+                    </div>
+                    <div class="card__title">
+                        <h2>Hágæða heyrnatól</h2>
+                    </div>
+                    <div class="card__text">
+                        <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við
+                            minnst á að þau eru hágæða?</p>
+                    </div>
+                    <div class="card__price">
+                        <p>39.999 kr.-</p>
+                    </div>
+                    <div for="number"> Fjöldi: </label>
                         <div class="card__form">
                             <form method="GET">
                                 <div class="card__fieldset">
                                     <div class="number">
-                                        <input type="number" name="number" id="number" placeholder="1"> 
+                                        <input type="number" name="number" id="number" placeholder="1">
                                     </div>
                                 </div>
                                 <div class="card__button">
-                                        <button class="item__button">
-                                            <img class="button__img" src="../img/cart.svg" alt="">
-                                            <p>Setja í körfu</p>
-                                        </button>
+                                    <button class="item__button">
+                                        <img class="button__img" src="../img/cart.svg" alt="">
+                                        <p>Setja í körfu</p>
+                                    </button>
                                 </div>
                             </form>
                         </div>
-                    </section>
-                </div>
-                <div class="card__col">
-                    <section class="card">  <!-- kort 6 -->
-                        <div class="card__image">
-                            <img class="card__img" src="../img/camera.jpg" alt="">
-                        </div>
-                        <div class="card__title">
-                            <h2>Mögnuð myndavél</h2>
-                        </div>
-                        <div class="card__text">
-                            <p>Taktu mynd af öllu sem þú sérð.</p>
-                        </div>
-                        <div class="card__price">
-                            <p>1.999.900 kr.-</p>
-                        </div>
-                        <div for="number"> Fjöldi: </label>
+                </section>
+            </div>
+            <div class="card__col">
+                <section class="card">
+                    <!-- kort 6 -->
+                    <div class="card__image">
+                        <img class="card__img" src="../img/camera.jpg" alt="">
+                    </div>
+                    <div class="card__title">
+                        <h2>Mögnuð myndavél</h2>
+                    </div>
+                    <div class="card__text">
+                        <p>Taktu mynd af öllu sem þú sérð.</p>
+                    </div>
+                    <div class="card__price">
+                        <p>1.999.900 kr.-</p>
+                    </div>
+                    <div for="number"> Fjöldi: </label>
                         <div class="card__form">
                             <form method="GET">
                                 <div class="card__fieldset">
                                     <div class="number">
-                                        <input type="number" name="number" id="number" placeholder="1"> 
+                                        <input type="number" name="number" id="number" placeholder="1">
                                     </div>
                                 </div>
                                 <div class="card__button">
-                                        <button class="item__button">
-                                            <img class="button__img" src="../img/cart.svg" alt="">
-                                            <p>Setja í körfu</p>
-                                        </button>
+                                    <button class="item__button">
+                                        <img class="button__img" src="../img/cart.svg" alt="">
+                                        <p>Setja í körfu</p>
+                                    </button>
                                 </div>
                             </form>
                         </div>
-                    </section>
-                </div>
-            </div>   
-        </div> 
-         
+                </section>
+            </div>
+        </div>
+    </div>
 
-        <footer>
-            <div class="lists">
-                <div class="list__col">
+
+    <footer>
+        <div class="lists">
+            <div class="list__col">
                 <div class="links">
-                <ul>
-                    <h3>Vöruflokkar</h3>
-                    <li><a href="products.html">Nauðsynjavörur</a></li>
-                    <li><a href="products.html">Frábærar vörur</a></li>
-                    <li><a href="products.html">Ómissandi vörur</a></li>
-                    <li><a href="products.html">Ótrúlegar vörur</a></li>
-                    <li><a href="products.html">Magnaðar vörur</a></li>
-                </ul>
-                </div>
-                </div>
-                <div class="list__col">
-                <div class="links">
-                <ul>
-                    <h3>Vöruflokkar</h3>
-                    <li><a href="products.html">Trylltar vörur</a></li>
-                    <li><a href="products.html">Geggjaðar vörur</a></li>
-                    <li><a href="products.html">Svakalegar vörur</a></li>
-                    <li><a href="products.html">Fáránlegar vörur</a></li>
-                    <li><a href="products.html">Klikkaðar vörur</a></li>
-                </ul>
-                </div>
-                </div>
-                <div class="list__col">
-                <div class="links">
-                <ul>
-                    <h3>Vöruflokkar</h3>
-                    <li><a href="products.html">Nýjar vörur</a></li>
-                    <li><a href="products.html">Gamlar vörur</a></li>
-                    <li><a href="products.html">Skrítnar vörur</a></li>
-                </ul>
-                </div>
-                </div>
-                <div class="list__col">
-                <div class="links">
-                <ul>
-                    <h3>Síður</h3>
-                    <li><a href="products.html">Allar vörur</a></li>
-                    <li><a href="products.html">Starfsfólk</a></li>
-                    <li><a href="products.html">Karfa</a></li>
-                </ul>
-                </div>
+                    <ul>
+                        <h3>Vöruflokkar</h3>
+                        <li><a href="products.html">Nauðsynjavörur</a></li>
+                        <li><a href="products.html">Frábærar vörur</a></li>
+                        <li><a href="products.html">Ómissandi vörur</a></li>
+                        <li><a href="products.html">Ótrúlegar vörur</a></li>
+                        <li><a href="products.html">Magnaðar vörur</a></li>
+                    </ul>
                 </div>
             </div>
-            <p>© 2018 Vöruhúsið</p>
-            </footer>
-    </body>
+            <div class="list__col">
+                <div class="links">
+                    <ul>
+                        <h3>Vöruflokkar</h3>
+                        <li><a href="products.html">Trylltar vörur</a></li>
+                        <li><a href="products.html">Geggjaðar vörur</a></li>
+                        <li><a href="products.html">Svakalegar vörur</a></li>
+                        <li><a href="products.html">Fáránlegar vörur</a></li>
+                        <li><a href="products.html">Klikkaðar vörur</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list__col">
+                <div class="links">
+                    <ul>
+                        <h3>Vöruflokkar</h3>
+                        <li><a href="products.html">Nýjar vörur</a></li>
+                        <li><a href="products.html">Gamlar vörur</a></li>
+                        <li><a href="products.html">Skrítnar vörur</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list__col">
+                <div class="links">
+                    <ul>
+                        <h3>Síður</h3>
+                        <li><a href="products.html">Allar vörur</a></li>
+                        <li><a href="products.html">Starfsfólk</a></li>
+                        <li><a href="products.html">Karfa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p>© 2018 Vöruhúsið</p>
+    </footer>
+</body>
+
 </html>
