@@ -102,7 +102,7 @@
 
 
 .card__title {
-    font: fonts(heading_font);
+    font-family: font(heading_font);
     font-size: 1rem; 
     font-style: bold;
     padding-bottom: 5px;
@@ -110,25 +110,26 @@
 
 
 .card__text {
-    font: fonts(main_font);
+    font-family: font(main_font);
     font-size: 1rem;
     padding-bottom: 10px;
 }
 
 .card__price {
-    font: fonts(heading_font);
-    font-size: 0.875rem;
-    font-style: bold;
+    font-family: font(heading_font);
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 1em;
 }
 
-.card__form {
+.card__input {
     margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     align-items: row;
 }
 
 .card__button {
+    display: none;
     padding-left: 20px;
     overflow: hidden;
 }
