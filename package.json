@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "browser-sync": "browser-sync start --server --files index.html styles.css pages/*.html",
+    "lint-scss": "stylelint *.scss scss/*.scss --syntax scss",
     "lint": "stylelint *.scss scss/*.scss --syntax scss",
     "sass": "node-sass --source-map-embed styles.scss styles.css",
     "sass-watch": "node-sass --source-map-embed --watch styles.scss --recursive styles.css",
