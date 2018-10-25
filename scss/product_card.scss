@@ -29,8 +29,53 @@
     width: 100%;
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
+
+
+// stærra en 769px
+
+
+@media screen and (min-width: $bp_tablet) {
+    .card__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1em -10px 2em -10px;
+        justify-content: space-around;
+    }
+    
+    .card__col {
+        width: 50%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+
+
+
+// stærra en 1200px
+
+@media screen and (min-width: $bp_large) {
+    .card__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1em -10px 2em -10px;
+        justify-content: space-around;
+    }
+    
+    .card__col {
+        width: 33%;
+        padding-right: 8.5px;
+        padding-left: 7.75px;
+    }
+}
+
+
+
+
+
+
 
 
 
@@ -65,7 +110,7 @@
 
 .card__text {
     font: fonts(main_font);
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .card__price {
@@ -101,42 +146,5 @@
 }
 
 
-// stærra en 769px
 
-
-@media screen and (min-width: $bp_tablet) {
-    .card__row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    .card__col {
-        width: 50%;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-}
-
-
-
-
-// stærra en 1200px
-
-@media screen and (min-width: $bp_large) {
-    .card__row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    .card__col {
-        width: 33%;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-    .card {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
 
