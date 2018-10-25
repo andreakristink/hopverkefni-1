@@ -82,14 +82,24 @@
 
 
 
+
+
+
+
 // útlit á kortunum sjálfum
 
 .card {
-    background-color:lightblue;
+    background-color:color(litur_hvitur);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-content: stretch;
+    justify-content: space-between;
+}
+
+.card__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .card__image {
@@ -102,6 +112,7 @@
 
 
 .card__title {
+    padding-top: 20px;
     font-family: font(heading_font);
     font-size: 1rem; 
     font-style: bold;
@@ -128,8 +139,7 @@
     align-items: row;
 }
 
-.card__button {
-    display: none;
+.product__button {
     padding-left: 20px;
     overflow: hidden;
 }
