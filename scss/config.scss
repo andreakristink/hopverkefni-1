@@ -17,6 +17,7 @@ $fonts: (
 );
 
 $bp_tablet: 768px;
+$bp_large: 1200px;
 
 @function color($color-name) {
   @return map-get($colors, $color-name)
