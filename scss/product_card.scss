@@ -89,6 +89,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    align-content: stretch;
 }
 
 .card__image {
@@ -111,10 +112,12 @@
 .card__text {
     font: fonts(main_font);
     font-size: 1rem;
+    padding-bottom: 10px;
 }
 
 .card__price {
-    font-size: 1rem;
+    font: fonts(heading_font);
+    font-size: 0.875rem;
     font-style: bold;
 }
 
@@ -122,7 +125,7 @@
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    align-items: row;
 }
 
 .card__button {
