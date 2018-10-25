@@ -34,6 +34,7 @@
 .item__form {
     display: flex;
     flex-direction: row;
+    
 }
 
 .item__image {
@@ -54,22 +55,41 @@ h2 {
     border: 1px sold;
     font-size: 1.3125em;
     padding: 0;
-    
+    width: 100%;
+}
+
+.item__button {
+    display: flex;
+    flex-direction: row;
     
 
-    .item__button {
-        //background: url("../img/cart.svg") no-repeat;
-        //background-size: 20px 20px;
-        
-        padding: 10px 0em;
-        width: 300px;
-        font-size: 1em;
+    background-color: color(litur_hvitur);
+    border: 1px solid #000;
+    border-radius: 3px;
+
+    transition: 
+        background-color 300ms ease-in-out,
+        border 300ms ease-in-out;
+    
+    padding: 10px 10px;
+    font-size: 12px;
+    margin: 0;
+
+    p {
+        padding-left: 1em;
     }
 }
 
+.item__button:hover {
+    background-color: color(litur_bleikur);
+    border: none;
+}
+
 .button__img {
-    width: 1em;
-    height: 1em;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -77,11 +97,13 @@ h2 {
 .cart__info {
     display: flex;
     flex-direction: column;
+    
     // margin: 0 auto; Þetta er bara fyrir stærri upplausnir
 }
 
 .info__form {
     margin-top: 2em;
+    
 }
 
 .form__list {
