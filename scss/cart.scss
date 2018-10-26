@@ -11,35 +11,55 @@
     padding-right: 20px;
 }
 
+.cart__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item__content {
+    background-color:color(litur_hvitur);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart__footer {
+    padding-bottom: 10px;
+}
+
+
 .cart__title {
     margin-top: 1em;
 }
 
+.item__title {
+    font-family: font(heading_font);
+    font-size: 1.5rem; 
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
 
+.item__text {
+    font-family: font(main_font);
+    font-size: 1rem;
+}
 
-.cart__item {
-    display: flex;
-    flex-direction: column;
-
-    .item__text {
-        margin-top: 1em;
-    }
-
-    .item__price {
-        font-family: font(heading_font);
-        font-size: 1.25em;
-        font-weight: bold;
-        margin-top: 1em;
-    }
+.item__price {
+    font-family: font(heading_font);
+    font-size: 1.3125em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
 }
 
 
-
-.item__form {
+.item__input {
     display: flex;
-    flex-direction: row;
-    
+    align-items: flex-end;
+    margin-left: 2px;
+    margin-right: 2px;
 }
+
 
 .item__image {
     margin: 1em 0;
@@ -49,10 +69,6 @@
     }
 }
 
-h2 {
-    font-family: font(heading_font);
-    font-size: 2em;
-}
 
 .cart__fieldset {
     input {
@@ -102,6 +118,12 @@ h2 {
     padding: 0;
     margin: 0;
 }
+
+
+
+
+
+
 
 
 
