@@ -59,12 +59,22 @@
 .item__input {
     display: flex;
     align-items: flex-end;
+    
     margin-left: 2px;
     margin-right: 2px;
 }
 
-.cart__count {
+
+
+.item__count {
+    border: 1px solid color(litur_svartur);
+    border-radius: 3px;
+    font-size: 12px;
+
+    width: 7em;
+    height: 2.5em;
     margin-right: 0.75em;
+    padding: 18px 10px;
 }
 
 
@@ -145,16 +155,6 @@
     }
 }
 
-input {
-    width: 12em;
-    height: 2.5em;
-    border-radius: 3px;
-    border: 1px solid color(litur_svartur);
-    padding: 18px 10px;
-    font-size: 12px;
-    
-}
-
 .cart__buy {
     margin: 1em auto;
 
@@ -181,7 +181,10 @@ input {
 @media screen and (min-width: $bp_tablet) {
     .cart__item {
         flex-direction: row;
+        flex-wrap: wrap;
     }
+
+    
 
     .item__image {
         width: 33.3333333333333333%;
