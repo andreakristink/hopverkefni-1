@@ -5,6 +5,8 @@
 
 [//]: # (Upplýsingar um hvernig keyra skuli verkefnið.)
 
+Sækja þarf þá pakka sem fram koma í `package.json` áður en verkefnið er keyrt. Þegar því er lokið skal keyra verkefnið með skipuninni `npm run dev` í skipanaglugga.
+
 ## Uppsetning verkefnis
 [//]: # (Lýsingu á uppsetningu verkefnis, hvernig því er skipt í möppur, hvernig CSS er skipulagt og fleira sem á við)
 
