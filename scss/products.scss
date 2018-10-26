@@ -1,0 +1,169 @@
+@import "config.scss";
+
+
+// útlit á síðunni
+
+
+.cards__container {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.card__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em -10px 2em -10px;
+    justify-content: center;
+}
+
+.card__col {
+    padding-right: 0.625em;  // 10px
+    padding-left: 0.625em;   // 10px
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+// stærra en 769px
+
+
+@media screen and (min-width: $bp_tablet) {
+    .card__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1em -10px 2em -10px;
+        justify-content: space-around;
+    }
+    
+    .card__col {
+        width: 50%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+
+
+
+// stærra en 1200px
+
+@media screen and (min-width: $bp_large) {
+    .card__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1em -10px 2em -10px;
+        justify-content: space-around;
+    }
+    
+    .card__col {
+        width: 33%;
+        padding-right: 8.5px;
+        padding-left: 7.75px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// útlit á kortunum sjálfum
+
+.card {
+    background-color:color(litur_hvitur);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card__image {
+    overflow: hidden;
+}
+
+.card__img {
+    max-width: 100%;
+}
+
+
+.card__title {
+    padding-top: 20px;
+    font-family: font(heading_font);
+    font-size: 1rem; 
+    font-style: bold;
+    padding-bottom: 5px;
+}
+
+
+.card__text {
+    font-family: font(main_font);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.card__price {
+    font-family: font(heading_font);
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+
+
+
+
+
+
+//takkar neðst á síðu
+
+
+.card__input {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.card__count {
+    width: 70%;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.count {
+    width: 100%;
+}
+
+.button__img {
+    max-width: 100%;
+}
+  
+
+.card__number {
+    display: flex;
+    align-items: column;
+}
+
+
+
+
+
