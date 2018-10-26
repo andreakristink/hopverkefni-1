@@ -19,7 +19,6 @@ Eftirfarandi skrár eru notaðar til þess að búa til útlit vefsíðunnar:
 * `footer.scss`
 * `grid.scss`
 * `header.scss`
-* `product_card.scss`
 * `products.scss`
 * `staff.scss`
 
