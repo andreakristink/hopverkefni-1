@@ -15,15 +15,18 @@ $bp_large: 1200px;
   flex-direction: column;
   margin-left: -0.625em;  // -10px
   margin-right:-0.625em;  // -10px
+  align-items: center;
 }
 
 .grid__col {
   width: 100%;
   padding-right: 0.625em;  // 10px
   padding-left: 0.625em;   // 10px
+
 }
 
 .grid__text {
+
   h2 {
     font-family: font(heading_font);
     font-size: 3em;
@@ -67,6 +70,7 @@ $bp_large: 1200px;
 @media screen and (min-width: $bp_tablet) {
   .grid__row {
     flex-direction: row;
+    margin-top: 0;
   }
 
   .grid__col {
@@ -100,11 +104,11 @@ $bp_large: 1200px;
 @media screen and (min-width: $bp_large) {
   .grid__row {
     flex-direction: row;
-    margin-top: -1em;
+    margin-top: 0em;
   }
 
   .grid__col {
-    margin: 2em 0 1em 0;
+    margin: 1em 0 1em 0;
     width: 50%;
   }
 
@@ -114,8 +118,7 @@ $bp_large: 1200px;
 
   .grid__text {
     h2 {
-      margin-top: 2em;
-      padding-top: 1em;
+      margin-top: 1em;
     }
 
     p {

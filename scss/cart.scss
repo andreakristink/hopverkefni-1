@@ -4,62 +4,84 @@
 .cart__main {
     display: flex;
     flex-direction: column;
-    
     margin: 0 auto;
     max-width: 1240px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.cart__title {
-    margin-top: 1em;
-}
-
-
-
 .cart__item {
     display: flex;
     flex-direction: column;
-
-    .item__text {
-        margin-top: 1em;
-    }
-
-    .item__price {
-        font-family: font(heading_font);
-        font-size: 1.25em;
-        font-weight: bold;
-        margin-top: 1em;
-    }
 }
 
-
-
-.item__form {
+.item__content {
+    background-color:color(litur_hvitur);
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.cart__footer {
+    padding-bottom: 10px;
+}
+
+
+.cart__title {
+    font-size: 2.25em;
+    font-family: font(heading_font);
+    margin-top: 1em;
+}
+
+.item__title {
+    font-family: font(heading_font);
+    font-size: 1.5rem; 
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.item__text {
+    font-family: font(main_font);
+    font-size: 1rem;
+    padding-bottom: 1.25em;
+}
+
+.item__price {
+    font-family: font(heading_font);
+    font-size: 1.3125em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+
+.item__input {
+    display: flex;
+    align-items: flex-end;
+    
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+
+
+.item__count {
+    border: 1px solid color(litur_svartur);
+    border-radius: 3px;
+    font-size: 12px;
+
+    width: 7em;
+    height: 2.5em;
+    margin-right: 0.75em;
+    padding: 18px 10px;
+}
+
 
 .item__image {
     margin: 1em 0;
 
     .item__img {
         width: 100%
-    }
-}
-
-h2 {
-    font-family: font(heading_font);
-    font-size: 2em;
-}
-
-.cart__fieldset {
-    input {
-        border: 1px solid color(litur_svartur);
-        padding: 18px 10px;
-        font-size: 12px;
-        margin-right: 1em;
     }
 }
 
@@ -84,7 +106,7 @@ h2 {
     
     padding: 10px 10px;
     font-size: 12px;
-    margin: 0;
+    margin-right: 10px;
 
     p {
         padding-left: 1em;
@@ -105,35 +127,74 @@ h2 {
 
 
 
-.cart__info {
+
+
+
+
+
+
+
+.info__row {
     display: flex;
     flex-direction: column;
-    
-    // margin: 0 auto; Þetta er bara fyrir stærri upplausnir
+    margin-right: -10px;
+    margin-left: -10px;
+
 }
 
 .info__form {
     margin-top: 2em;
-    
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.form__list {
+.form__info {
     display: flex;
-    flex-direction: row;
-
-    .form__date {
-        padding-right: 1em;
-    }
+    align-items: center;
+    
+    padding-top: 20px;
 }
 
-input {
-    width: 12em;
-    height: 2.5em;
-    border-radius: 3px;
+.form__field {
+    font-size: 1em;
+    width: 33.33333333333%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-left: 0;
+}
+
+.form__input {
     border: 1px solid color(litur_svartur);
-    padding: 18px 10px;
-    font-size: 12px;
-    
+    border-radius: 3px;
+
+    width: 66.666666666667%;
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.form__dropdown {
+    height: 30px;
+}
+
+.form__expiration {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 66.666666666667%;
+    //padding: 0;
+}
+
+
+.form__date {
+    border: 1px solid color(litur_svartur);
+    border-radius: 3px;
+
+    height: 30px;
+    margin-left: 10px;
+    padding: 0 10px;
 }
 
 .cart__buy {
@@ -162,11 +223,13 @@ input {
 @media screen and (min-width: $bp_tablet) {
     .cart__item {
         flex-direction: row;
-    }
+        flex-wrap: wrap;
+    }    
 
     .item__image {
         width: 33.3333333333333333%;
         padding-right: 13px;
+        padding-bottom: 0;
     }
 
     .item__content {
@@ -174,12 +237,26 @@ input {
         padding-left: 10px;
     }
 
-    .cart__info {
-        flex-direction: row;    // hlið við hlið
-        margin: 0 auto;         // miðjujafna
-        
-        .info__form {
-            padding-right: 1em;
-        }
+    .info__row {
+        flex-direction: row;
+
     }
+
+    .info__form {
+        width: 50%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }    
+}
+
+@media screen and (min-width: $bp_large) {
+    .info__row {
+        justify-content: center;
+    }
+
+    .info__form {
+        width: 33.33333333333333%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }  
 }

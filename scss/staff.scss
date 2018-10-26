@@ -46,6 +46,17 @@
     transform: rotateY(180deg); //sjáum ekki bakhliðina strax
 }
 
+.staff__title {
+    font-family: font(heading_font);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.staff__text {
+    font-size: 1.25em;
+    padding: 0 1em;
+}
+
 // útlit á síðu í mismunandi stærðarhlutföllum
 .staff__row {
     display: flex;

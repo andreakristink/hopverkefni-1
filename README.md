@@ -1,6 +1,57 @@
 
 # Hópverkefni 1
 
+## Keyrsla á verkefni
+
+[//]: # (Upplýsingar um hvernig keyra skuli verkefnið.)
+
+## Uppsetning verkefnis
+[//]: # (Lýsingu á uppsetningu verkefnis, hvernig því er skipt í möppur, hvernig CSS er skipulagt og fleira sem á við)
+
+Markmið verkefnisins var að hanna og útfæra vefsíðu frá grunni eftir gefinni fyrirmynd. Gefnin var `index.html` með vísun í `styles.css` og `grid.css` ásamt tómum skrám fyrir `products.html`, `staff.html` og `cart.html` sem finna má í möppunni `pages/`.
+
+### Útlit
+Öllu útlit er stjórnað í gegnum `styles.scss`, sem síðan er þýdd yfir í `styles.css`. Úliti síðurnar er skipt upp í nokkra hluta og hefur hver hlut `.scss`skrá út af fyrir sig. Allar `.scss`skrár má finna í möppunni `scss/` og eru tengdar inn í `syles.scss`. 
+Í skránni `config.scss` eru allar breytur og fastar verkefnisins skilgreindar á einum stað, en þær eru svo notaðar í öðrum skjölum.
+Eftirfarandi skrár eru notaðar til þess að búa til útlit vefsíðunnar:
+* `cart.scss`
+* `config.scss`
+* `footer.scss`
+* `grid.scss`
+* `header.scss`
+* `product_card.scss`
+* `products.scss`
+* `staff.scss`
+
+### Myndir
+Allar myndir sem notaðar eru á vefsíðunni má finna undir `ìmg/`. Vísað er í þær úr `.html` skránum.
+
+### Tæki og tól
+Skráin `package.json`heldur utan um þau tæki og tól sem nauðsynleg eru til þess að síðan keyri. Þar má finna upplýsingar um þá pakka sem notaðir eru í verkefninu, og útgáfu þeirra. Einnig má finna upplýsingar um GitHub síðu verkefnisins. 
+Mappan `node_modules/` heldur utan um alla pakka sem byggt er á. 
+
+### Annað
+Að lokum voru gefnar nokkrar skrár með verkefninu, en þær eru:
+* `efni/`: Upplýsingar um texta sem koma á fram á vefsíðunni.
+* `utlit/`: Myndir og myndband sem sýna útlit fyrirmyndar í mismunandi stærðum.
+* `.editorconfig`
+* `.gitattributes`
+* `.gitignore`: Yfirlit yfir allar þær skrár sem git á að líta framhjá
+* `.stylelintrc`
+
+
+## Hópmeðlimir
+
+Hópmeðlimir og höfundar þessa verkefnis eru:
+* Friðrik Árni Halldórsson (fah13@hi.is)
+* Kristjana Björk Barðdal (kbb16@hi.is)
+* Lea Jerman Plesec (ljp1@hi.is)
+
+
+---
+
+# Hópverkefni 1
+
 Verkefnið felst í því að smíða vef eftir forskrift.
 
 Gefnar eru [fyrirmyndir](utlit/) í `500px`, `800px` og `1500px` með grind ásamt `1500px` án grindar og yfirliti yfir virkni vefs í `utlit/video.mp4`.
@@ -114,4 +165,4 @@ Myndir frá:
 
 ---
 
-> Útgáfa 0.1
+> Útgáfa 0.2
