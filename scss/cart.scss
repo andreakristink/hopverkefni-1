@@ -30,6 +30,8 @@
 
 
 .cart__title {
+    font-size: 2.25em;
+    font-family: font(heading_font);
     margin-top: 1em;
 }
 
@@ -43,6 +45,7 @@
 .item__text {
     font-family: font(main_font);
     font-size: 1rem;
+    padding-bottom: 1.25em;
 }
 
 .item__price {
@@ -60,22 +63,16 @@
     margin-right: 2px;
 }
 
+.cart__count {
+    margin-right: 0.75em;
+}
+
 
 .item__image {
     margin: 1em 0;
 
     .item__img {
         width: 100%
-    }
-}
-
-
-.cart__fieldset {
-    input {
-        border: 1px solid color(litur_svartur);
-        padding: 18px 10px;
-        font-size: 12px;
-        margin-right: 1em;
     }
 }
 
@@ -100,7 +97,7 @@
     
     padding: 10px 10px;
     font-size: 12px;
-    margin: 0;
+    margin-right: 10px;
 
     p {
         padding-left: 1em;
